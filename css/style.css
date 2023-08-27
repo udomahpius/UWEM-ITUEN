@@ -2,15 +2,28 @@
 :root {
     --primary: #001233;
     --light: #F0FBFC;
-    --dark: #3fbf3f;
+    --dark: #2d9c69;
 }
 .text-primary{
     color: #001233 !important;
     
 }
+.btn-primary-2{
+    background-color: var(--primary) !important;
+    transition: all ease-in-out 0.5s !important;
+}
+.btn-primary-2:hover{
+    background-color: var(--dark) !important;
+    
+}
+
 .text-color{
     color: var(--dark);
 }
+.text-color-2{
+    color: var(--primary);
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -24,13 +37,31 @@ a{
 .fw-semi-bold {
     font-weight: 700 !important;
 }
+.b-bottom{
+    border-bottom:dashed var(--primary) 2px !important;
+}
+.icon-fs{
+    font-size: 2rem !important;
+}
+.icon-fs:hover{
+color: var(--primary);
+}
 
+.float-left{
+    float:  left !important;
+}
 .back-to-top {
     position: fixed;
     display: none;
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+/* javascript click button */
+.hide{
+    display:none;
+    transition: all ease 0.10s;
 }
 
 

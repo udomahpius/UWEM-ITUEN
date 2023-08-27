@@ -107,3 +107,37 @@
     
 })(jQuery);
 
+// click to view all content
+       
+let hideIcon = document.querySelector(".icon-non"); 
+let showIcon = document.querySelector(".icon-show");
+let hidenItem = document.querySelector('.hide-item');
+let useStatement = false;
+hideIcon.classList.add('hide');
+hidenItem.classList.add('hide');
+ 
+let iconContainer = document.querySelector('.icon-box');
+
+iconContainer.addEventListener('click', () => {
+    if (useStatement === false) {
+        hideIcon.classList.remove('hide');
+        showIcon.classList.add('hide');
+        hidenItem.classList.remove('hide');
+        useStatement = true;
+    }
+    else {
+        hideIcon.classList.add('hide');
+        showIcon.classList.remove('hide');
+        hidenItem.classList.add('hide');
+        useStatement = false;
+
+    }
+})
+
+
+
+        
+
+
+
+
