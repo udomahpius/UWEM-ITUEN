@@ -189,8 +189,77 @@
         
             }
         })
-                
+              
+                        
+        // click to view all content
+
+            // click to view all content 6
+       
+            let hideIcon_6 = document.querySelector(".icon-non-6"); 
+            let showIcon_6 = document.querySelector(".icon-show-6");
+            let hidenItem_6 = document.querySelector('.hide-item-6');
+            let useStatement_6 = false;
+            hideIcon_6.classList.add('hide');
+            hidenItem_6.classList.add('hide');
+             
+            let iconContainer_6 = document.querySelector('.icon-box-6');
+            
+            iconContainer_6.addEventListener('click', () => {
+                if (useStatement_6 === false) {
+                    hideIcon_6.classList.remove('hide');
+                    showIcon_6.classList.add('hide');
+                    hidenItem_6.classList.remove('hide');
+                    useStatement_6 = true;
+                }
+                else {
+                    hideIcon_6.classList.add('hide');
+                    showIcon_6.classList.remove('hide');
+                    hidenItem_6.classList.add('hide');
+                    useStatement_6 = false;
+            
+                }
+            })
+
+
+                    // click to view all content 7
+       
+        let hideIcon_7 = document.querySelector(".icon-non-7"); 
+        let showIcon_7 = document.querySelector(".icon-show-7");
+        let hidenItem_7 = document.querySelector('.hide-item-7');
+        let useStatement_7 = false;
+        hideIcon_7.classList.add('hide');
+        hidenItem_7.classList.add('hide');
+         
+        let iconContainer_7 = document.querySelector('.icon-box-7');
         
+        iconContainer_7.addEventListener('click', () => {
+            if (useStatement_7 === false) {
+                hideIcon_7.classList.remove('hide');
+                showIcon_7.classList.add('hide');
+                hidenItem_7.classList.remove('hide');
+                useStatement_7 = true;
+            }
+            else {
+                hideIcon_7.classList.add('hide');
+                showIcon_7.classList.remove('hide');
+                hidenItem_7.classList.add('hide');
+                useStatement_7 = false;
+        
+            }
+        })
 
 
+    
+    
+
+
+// get current date
+
+document.getElementById('date').innerHTML = new Date().getFullYear()
+
+
+// sign up
+document.querySelector('.click').addEventListener('click', () => {
+    window.location.assign('../contact.html#signup')
+})
 

@@ -4,6 +4,9 @@
     --light: #F0FBFC;
     --dark: #2d9c69;
 }
+.bg-c{
+    background: rgb(175, 221, 240) !important;
+}
 .text-primary{
     color: #001233 !important;
     
@@ -49,6 +52,18 @@ color: var(--primary);
 
 .float-left{
     float:  left !important;
+}
+
+@media screen and (max-width:700px) {
+    .w-100-md-mobile{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:1120px) {
+    .hide-me{
+        display: none !important;
+    }
+    
 }
 .back-to-top {
     position: fixed;
@@ -240,7 +255,7 @@ color: var(--primary);
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/c-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
